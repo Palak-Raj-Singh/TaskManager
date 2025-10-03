@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager - Progress Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Task Manager with Progress Tracker</h1>
+  <div class="container">
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Enter task..." required />
+      <textarea id="taskDesc" placeholder="Task description..."></textarea>
+      <select id="priority">
+        <option value="Low">Low Priority</option>
+        <option value="Medium" selected>Medium Priority</option>
+        <option value="High">High Priority</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div class="progress">
+      <div class="bar"><div class="fill" id="progressFill"></div></div>
+      <p id="progressText">0% completed</p>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <!-- Edit Task Modal -->
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <h2>Edit Task</h2>
+      <input type="text" id="editTitle" required />
+      <textarea id="editDesc"></textarea>
+      <select id="editPriority">
+        <option value="Low">Low Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="High">High Priority</option>
+      </select>
+      <button id="saveEdit">Save Changes</button>
+      <button id="cancelEdit">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
