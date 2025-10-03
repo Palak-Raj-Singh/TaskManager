@@ -13,5 +13,5 @@ A simple and interactive Task Manager web app built using HTML, CSS, and JavaScr
 🛠 Technologies Used
 HTML5 → Structure of the app.
 CSS3 → Styling, layout, and modal design.
-JavaScript (Vanilla JS) → Dynamic functionality (add, edit, delete, filter, progress tracking).
+JavaScript → Dynamic functionality (add, edit, delete, filter, progress tracking).
 LocalStorage API → Save tasks in the browser.
